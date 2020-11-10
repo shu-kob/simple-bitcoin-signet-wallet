@@ -14,6 +14,11 @@ class WalletController < ApplicationController
     render template: 'wallet/index'
   end
 
+  def receive
+    @newaddress = bitcoinRPC('getnewaddress',[])
+    render template: 'wallet/receive'
+  end
+
   private
 	def bitcoinRPC(method,param)
 		http = Net::HTTP.new(HOST, PORT)
