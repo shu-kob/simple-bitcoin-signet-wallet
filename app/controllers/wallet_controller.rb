@@ -16,6 +16,15 @@ class WalletController < ApplicationController
 
   def receive
     @newaddress = bitcoinRPC('getnewaddress',[])
+    @uri = "bitcoin:" + @newaddress
+    qrcode = RQRCode::QRCode.new(@uri, size: 10, level: :h)
+    @qrcode = qrcode.as_svg(
+      offset: 0,
+      color: '000',
+      shape_rendering: 'crispEdges',
+      module_size: 6,
+      standalone: true
+    )
     render template: 'wallet/receive'
   end
 
