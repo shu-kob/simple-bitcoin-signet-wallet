@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   get '/', to: 'wallet#index'
   get '/index', to: 'wallet#index'
   get '/receive', to: 'wallet#receive'
+  get '/send', to: 'wallet#send'
+  post '/sent', to: 'wallet#sent'
 end

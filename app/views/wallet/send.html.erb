@@ -1,0 +1,10 @@
+<% @title = "送金" %>
+<h1><%= @title %></h1>
+
+<%= form_tag({ :controller => 'wallet', :action => 'sent' },{ :method => :post}) do %>
+    <%= label_tag :address %> 
+    <%= text_field :sending, :address %><br>
+    <%= label_tag :amount %> 
+    <%= text_field :sending, :amount %><br>
+    <%= submit_tag "送金"%>
+<% end %>
