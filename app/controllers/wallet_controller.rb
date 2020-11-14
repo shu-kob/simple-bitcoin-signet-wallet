@@ -35,7 +35,12 @@ class WalletController < ApplicationController
   def sent
     address = params[:sending]['address']
     amount = params[:sending]['amount']
-    @settxfee = bitcoinRPC('settxfee',[0.00001])
+    if params[:sending]['fee'].nil?
+      fee = 0.00001
+    else
+      fee = params[:sending]['fee']
+    end
+    @settxfee = bitcoinRPC('settxfee',[fee])
     @txid = bitcoinRPC('sendtoaddress',[address, amount])
     render template: 'wallet/sent'
   end
