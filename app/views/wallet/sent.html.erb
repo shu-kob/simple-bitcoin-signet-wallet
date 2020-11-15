@@ -1,3 +1,8 @@
-<% @title = "送金しました" %>
+<% @title = "送金" %>
 <h1><%= @title %></h1>
 
+<% if @txid %>
+  <tr><th>TX: </th><td><%= @txid %></td>
+<% else %>
+  送金できませんでした
+<% end %>

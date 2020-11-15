@@ -35,7 +35,7 @@ class WalletController < ApplicationController
   def sent
     address = params[:sending]['address']
     amount = params[:sending]['amount']
-    if params[:sending]['fee'].nil?
+    if params[:sending]['fee'].empty?
       fee = 0.00001
     else
       fee = params[:sending]['fee']
