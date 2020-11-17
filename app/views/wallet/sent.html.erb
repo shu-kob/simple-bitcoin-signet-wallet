@@ -1,0 +1,8 @@
+<% @title = "送金" %>
+<h1><%= @title %></h1>
+
+<% if @txid %>
+  <tr><th>TX: </th><td><%= link_to @txid, "https://explorer.bc-2.jp/tx/" + @txid %></td>
+<% else %>
+  送金できませんでした
+<% end %>
