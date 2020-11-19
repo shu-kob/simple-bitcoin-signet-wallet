@@ -4,7 +4,17 @@
 <tr><th>　　</th><td><%= @qrcode.html_safe %></td></tr>
 <br>
 <br>
-
+<tr><th>　　</th><td><%= @uri %></td></tr>
+<br>
+<br>
 <tr><th>アドレス: </th><td><%= @newaddress %></td>
+
+<%= form_tag({ :controller => 'wallet', :action => 'receive' },{ :method => :post }) do %>
+<%= label_tag :amount %>
+<%= text_field_tag :amount %><br>
+<%= submit_tag "QRコード生成"%>
+<% end %>
+
+<%= button_to "新しいアドレス生成", {controller: 'wallet', action: 'receive'}, {method: :get} %>
 
 <%= render "shared/links" %>
