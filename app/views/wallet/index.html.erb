@@ -1,6 +1,9 @@
 <% @title = "トップページ" %>
 <h1><%= @title %></h1>
 
-<tr><th>残高: </th><td><%= @balance %> sBTC</td>
+<tr><th>残高: </th></tr><td><%= @balance %> sBTC</td>
+<br>
+<br>
+<tr><th>送受信履歴</th></tr><td><%= @listtransactions %></td>
 
 <%= render "shared/links" %>

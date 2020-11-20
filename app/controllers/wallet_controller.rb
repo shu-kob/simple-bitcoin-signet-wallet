@@ -11,6 +11,7 @@ require 'rqrcode'
 class WalletController < ApplicationController
   def index
     @balance = bitcoinRPC('getbalance',[])
+    @listtransactions = bitcoinRPC('listtransactions',[])
     render template: 'wallet/index'
   end
 
