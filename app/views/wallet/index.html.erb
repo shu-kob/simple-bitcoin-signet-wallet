@@ -5,6 +5,9 @@
 <br>
 <br>
 <tr><th>送受信履歴</th></tr><br>
+
+<table border="1">
+  <thead>
 <tr>
   <th>TxID</th>
   <th>送受</th>
@@ -13,8 +16,12 @@
   <th>承認数</th>
   <th>ブロック高</th>
   <th>ブロックハッシュ</th>
-  <br>
+</tr>
+</thead>
+
+<tbody>
 <% for i in 0..@listtransactions.length-1 %>
+<tr>
   <td><%= link_to @listtransactions[i]['txid'], "https://explorer.bc-2.jp/tx/" + @listtransactions[i]['txid'] %></td>
   <% if @listtransactions[i]['category'] == "receive" %><td>受取</td>
   <% elsif @listtransactions[i]['category'] == "send" %><td>送金</td>
@@ -24,8 +31,9 @@
   <td><%= @listtransactions[i]['confirmations'] %></td>
   <td><%= @listtransactions[i]['blockheight'] %></td>
   <td><%= link_to @listtransactions[i]['blockhash'], "https://explorer.bc-2.jp/block/" + @listtransactions[i]['blockhash'] %></td>
-  <br>
-<% end %>
 </tr>
+<% end %>
+</tbody>
+</table>
 
 <%= render "shared/links" %>
