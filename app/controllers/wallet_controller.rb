@@ -37,7 +37,8 @@ class WalletController < ApplicationController
   end
 
   def sendings
-
+    @balance = bitcoinRPC('getbalance',[])
+    render template: 'wallet/send'
   end
 
   def sent
