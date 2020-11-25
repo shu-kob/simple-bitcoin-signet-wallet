@@ -30,8 +30,12 @@
         <td><%= @listtransactions[i]['amount'] %> BTC</td>
         <td><%= Time.at(@listtransactions[i]['time']) %></td>
         <td><%= @listtransactions[i]['confirmations'] %></td>
-        <td><%= @listtransactions[i]['blockheight'] %></td>
-        <td><%= link_to @listtransactions[i]['blockhash'], "https://explorer.bc-2.jp/block/" + @listtransactions[i]['blockhash'], target: :_blank %></td>
+        <%if @listtransactions[i]['blockheight'] %>
+          <td><%= @listtransactions[i]['blockheight'] %></td>
+        <% else %><td>未承認</td><% end %>
+        <%if @listtransactions[i]['blockhash'] %>
+          <td><%= link_to @listtransactions[i]['blockhash'], "https://explorer.bc-2.jp/block/" + @listtransactions[i]['blockhash'], target: :_blank %></td>
+        <% else %><td>未承認</td><% end %>
       </tr>
     <% end %>
   </tbody>
