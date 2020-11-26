@@ -11,7 +11,9 @@ require 'rqrcode'
 class WalletController < ApplicationController
   def index
     @balance = bitcoinRPC('getbalance',[])
-    @listtransactions = bitcoinRPC('listtransactions',[])
+    @count = 100
+    @skip = 0
+    @listtransactions = bitcoinRPC('listtransactions',["*",@count,@skip])
     render template: 'wallet/index'
   end
 
@@ -35,7 +37,8 @@ class WalletController < ApplicationController
   end
 
   def sendings
-
+    @balance = bitcoinRPC('getbalance',[])
+    render template: 'wallet/send'
   end
 
   def sent
