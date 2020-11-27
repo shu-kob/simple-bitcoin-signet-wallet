@@ -9,7 +9,7 @@
     <%= label_tag :address %> 
     <%= text_field :sending, :address %><br>
     <%= label_tag :amount %> 
-    <%= text_field :sending, :amount %><br>
+    <%= number_field :sending, :amount, step: "0.00000001" %><br>
     <%= label_tag :fee %>
     <%= text_field :sending, :fee %><br>
     <%= submit_tag "送金"%>
