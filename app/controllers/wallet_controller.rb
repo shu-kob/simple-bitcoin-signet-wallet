@@ -49,6 +49,9 @@ class WalletController < ApplicationController
     else
       fee = params[:sending]['fee']
     end
+    if amount.to_i < 0.00000294
+      @message = "dust"
+    end
     @settxfee = bitcoinRPC('settxfee',[fee])
     @txid = bitcoinRPC('sendtoaddress',[address, amount])
     render template: 'wallet/sent'

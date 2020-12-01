@@ -3,6 +3,8 @@
 
 <% if @txid %>
   <tr><th>TX: </th><td><%= link_to @txid, "https://explorer.bc-2.jp/tx/" + @txid, target: :_blank %></td>
+<% elsif @message == "dust" %>
+  送金最低可能額は 0.00000294 sBTC です。
 <% else %>
   送金できませんでした
 <% end %>
