@@ -45,12 +45,17 @@ class WalletController < ApplicationController
     address = params[:sending]['address']
     amount = params[:sending]['amount']
     if params[:sending]['fee'].empty?
-      fee = 0.00001
+      fee = 0.000001
     else
       fee = params[:sending]['fee']
     end
-    if amount.to_i < 0.00000294
+
+    @balance = bitcoinRPC('getbalance',[])
+
+    if amount.to_d < 0.00000294
       @message = "dust"
+    elsif @balance.to_d < amount.to_d + fee.to_d
+      @message = "over"
     end
     @settxfee = bitcoinRPC('settxfee',[fee])
     @txid = bitcoinRPC('sendtoaddress',[address, amount])
