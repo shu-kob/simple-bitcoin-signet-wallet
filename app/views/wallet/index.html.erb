@@ -22,7 +22,7 @@
   <tbody>
     <% for n in 0..@listtransactions.length-1 %>
       <tr>
-        <% i = @listtransactions.length-1 - n%>
+        <% i = @listtransactions.length-1 - n %>
         <td><%= link_to @listtransactions[i]['txid'], "https://explorer.bc-2.jp/tx/" + @listtransactions[i]['txid'], target: :_blank %></td>
         <% if @listtransactions[i]['category'] == "receive" %><td>受取</td>
         <% elsif @listtransactions[i]['category'] == "send" %><td>送金</td>
