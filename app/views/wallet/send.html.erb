@@ -8,10 +8,10 @@
 <%= form_tag({ :controller => 'wallet', :action => 'sent' },{ :method => :post }) do %>
     <%= label_tag :address %> 
     <%= text_field :sending, :address %><br>
-    <%= label_tag :amount %> 
-    <%= number_field :sending, :amount, step: "0.00000001" %><br>
+    <%= label_tag :amount %>
+    <%= number_field :sending, :amount, step: "0.00000001" %> sBTC<br>
     <%= label_tag :fee %>
-    <%= text_field :sending, :fee %><br>
+    <%= text_field :sending, :fee %> sBTC<br>
     <%= submit_tag "送金"%>
 <% end %>
 
