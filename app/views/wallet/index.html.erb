@@ -22,12 +22,12 @@
   <tbody>
     <% for n in 0..@listtransactions.length-1 %>
       <tr>
-        <% i = @listtransactions.length-1 - n%>
+        <% i = @listtransactions.length-1 - n %>
         <td><%= link_to @listtransactions[i]['txid'], "https://explorer.bc-2.jp/tx/" + @listtransactions[i]['txid'], target: :_blank %></td>
         <% if @listtransactions[i]['category'] == "receive" %><td>受取</td>
         <% elsif @listtransactions[i]['category'] == "send" %><td>送金</td>
         <% end %>
-        <td><%= @listtransactions[i]['amount'] %> BTC</td>
+        <td><%= @listtransactions[i]['amount'].to_d %> sBTC</td>
         <td><%= Time.at(@listtransactions[i]['time']) %></td>
         <td><%= @listtransactions[i]['confirmations'] %></td>
         <%if @listtransactions[i]['blockheight'] %>
