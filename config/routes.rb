@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   post '/receive', to: 'wallet#receive'
   get '/send', to: 'wallet#sendings'
   post '/sent', to: 'wallet#sent'
+  get '/bitcoinderror', to: 'wallet#bitcoinderror', as: 'bitcoinderror'
 end

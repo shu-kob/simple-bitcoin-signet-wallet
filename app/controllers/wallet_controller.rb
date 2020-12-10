@@ -10,11 +10,16 @@ require 'rqrcode'
 
 class WalletController < ApplicationController
   def index
+    error = ""
     @balance = bitcoinRPC('getbalance',[])
     @count = 100
     @skip = 0
     @listtransactions = bitcoinRPC('listtransactions',["*",@count,@skip])
-    render template: 'wallet/index'
+    if @error == "exception"
+      render template: 'wallet/bitcoinderror'
+    else
+      render template: 'wallet/index'
+    end
   end
 
   def receive
@@ -69,6 +74,10 @@ class WalletController < ApplicationController
     request.basic_auth(RPCUSER,RPCPASSWORD)
     request.content_type = 'application/json'
     request.body = {method: method, params: param, id: 'jsonrpc'}.to_json
-    JSON.parse(http.request(request).body)["result"]
+    begin
+      JSON.parse(http.request(request).body)["result"]
+    rescue => e
+      @error = "exception"
+    end
   end
 end
