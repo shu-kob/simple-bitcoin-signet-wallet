@@ -43,11 +43,7 @@ class WalletController < ApplicationController
 
   def sendings
     @balance = bitcoinRPC('getbalance',[])
-    if @balance == "exception"
-      render template: 'wallet/bitcoinderror'
-    else
-      render template: 'wallet/send'
-    end
+    render template: 'wallet/send'
   end
 
   def sent
