@@ -1,7 +1,11 @@
 <% @title = "送金" %>
 <h1><%= @title %></h1>
 
-<tr><th>残高: </th></tr><td><%= @balance %> sBTC</td>
+<% if @balance == "exception" %>
+  <tr><td>bitcoindから情報を取得できません</td></tr>
+<% else %>
+  <tr><th>残高: </th></tr><td><%= @balance %> sBTC</td>
+<% end %>
 <br>
 <br>
 
