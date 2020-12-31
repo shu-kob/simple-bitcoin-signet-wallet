@@ -118,3 +118,70 @@ $ bitcoin-cli getblockchaininfo
 ```
 
 bitcoindを起動したままにして、Ruby on Railsの環境を整えていきます。
+
+## Ruby on Railsのインストール
+
+### Macの場合
+
+```
+$ brew link autoconf
+$ brew unlink autoconf && brew link autoconf
+$ brew install rbenv ruby-build
+$ brew update && brew upgrade ruby-build
+$ rbenv install 2.6.5
+# かなり時間がかかるので気長に待ちましょう
+$ rbenv global 2.6.5
+$ ruby -v
+# 2.6.5であればOK
+$ gem install bundler
+$ bundle -v
+$ gem install rails --version="~> 6.0.0"
+$ rails -v
+# 6系であればOK
+$ git clone https://github.com/shu-kob/rails-bitcoin
+$ cd rails-bitcoin
+$ bundle install
+$ brew install yarn
+$ yarn install --check-files
+$ rails s
+```
+
+
+### Ubuntuの場合
+
+```
+$ sudo apt-get update
+$ sudo apt-get -y install git curl g++ make
+$ sudo apt-get -y install zlib1g-dev libssl-dev libreadline-dev
+$ sudo apt-get -y install libyaml-dev libxml2-dev libxslt-dev
+$ sudo apt-get -y install sqlite3 libsqlite3-dev nodejs
+$ cd
+$ git clone git://github.com/sstephenson/rbenv.git .rbenv
+$ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+$ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+$ exec $SHELL
+$ mkdir -p ~/.rbenv/plugins
+$ cd ~/.rbenv/plugins
+$ git clone git://github.com/sstephenson/ruby-build.git
+$ rbenv install 2.6.5
+かなり時間がかかるので気長に待ちましょう
+$ rbenv global 2.6.5
+$ rbenv version
+# 2.6.5であればOK
+$ which ruby
+# 例)/home/vagrant/.rbenv/shims/ruby などと返ってくればOK
+$ ruby -v
+# 2.6.5であればOK
+$ gem install rails --version="~> 6.0.0"
+$ rbenv rehash
+$ rails -v
+# 6系であればOK
+$ git clone https://github.com/shu-kob/rails-bitcoin
+$ cd rails-bitcoin
+$ bundle install
+$ sudo apt-get install yarn
+$ sudo apt-get install npm
+$ sudo npm install -g n
+$ yarn install --check-files
+$ rails s
+```
