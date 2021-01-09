@@ -3,7 +3,7 @@
 準備中
 
 ## Bitcoin Core
-Bitcoin Coreはbitcoindとも呼ばれる公式クライアントです。
+Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントです。
 
 ### Bitcoin Core(bitcoind)のインストール
 
