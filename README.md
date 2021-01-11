@@ -148,7 +148,6 @@ $ yarn install --check-files
 $ rails s
 ```
 
-
 ### Ubuntuの場合
 
 ```
@@ -187,3 +186,22 @@ $ sudo npm install -g n
 $ yarn install --check-files
 $ rails s
 ```
+
+### ブラウザにてRails画面が立ち上がっていることを確認 
+
+http://localhost:3000/
+
+## VagrantでUbuntuを起動している場合は以下
+
+Vagrantfile
+```
+config.vm.network "private_network", ip: "192.168.33.10"
+```
+をコメントアウトして仮想マシンを起動して入る
+
+```
+vagrant up
+vagrant ssh
+```
+
+http://192.168.33.10:3000/
