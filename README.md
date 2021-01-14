@@ -13,8 +13,6 @@ Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントで�
 
 bitcoindのVer.は適宜変更してください。
 
-なお、v0.21.0でSignet対応予定です。
-
 ```
 $ cd
 $ wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-osx64.tar.gz
