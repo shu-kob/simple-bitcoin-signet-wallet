@@ -2,6 +2,8 @@
 
 準備中
 
+bitcoin v0.21.0のパッケージはまもなくリリースされるようです。
+
 ## Bitcoin Core
 Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントです。
 
