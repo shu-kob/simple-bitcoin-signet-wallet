@@ -7,11 +7,13 @@ Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントで�
 
 ### Bitcoin Core(bitcoind)のインストール
 
+bitcoindのVer.は適宜変更してください。
+
+Signetに対応しているのはv0.21.0以降です。
+
 #### Macにbitcoindをインストール
 
 ターミナルを開いて下記の通りコマンドを実行していきます。
-
-bitcoindのVer.は適宜変更してください。
 
 ```
 $ cd
@@ -23,9 +25,7 @@ $ sudo cp * /usr/local/bin
 
 #### Ubuntuにbitcoindをインストール
 
-ターミナルを開いて下記の通りコマンドを打っていきます。
-
-bitcoindのVer.は適宜変更してください。
+ターミナルで下記の通りコマンドを打っていきます。
 
 ```
 $ cd
