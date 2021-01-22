@@ -9,7 +9,7 @@ Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントで�
 
 bitcoindのVer.は適宜変更してください。
 
-Signetに対応しているのはv0.21.0以降です。
+SignetをサポートしているVer.はv0.21.0以降です。
 
 #### Macにbitcoindをインストール
 
