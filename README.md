@@ -203,3 +203,18 @@ vagrant ssh
 ```
 
 http://192.168.33.10:3000/
+
+## ソースコードをcloneしてアプリを起動
+
+```
+git clone https://github.com/shu-kob/simple-bitcoin-signet-wallet
+```
+### ブラウザにてアプリ画面が立ち上がっていることを確認
+
+ローカルの場合
+
+http://localhost:3000/
+
+vagrantの場合
+
+http://192.168.33.10:3000/
