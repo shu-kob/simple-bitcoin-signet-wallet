@@ -1,7 +1,5 @@
 # Simple Bitcoin Signet Wallet
 
-準備中
-
 ## Bitcoin Core
 Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントです。
 
