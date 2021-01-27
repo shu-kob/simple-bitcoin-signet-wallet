@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-gem 'bitcoinrb', require: 'bitcoin'
+gem 'bitcoinrb', '>= 0.6.0', require: 'bitcoin'
 
 gem 'rqrcode'
 

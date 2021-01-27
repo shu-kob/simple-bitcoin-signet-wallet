@@ -1,7 +1,7 @@
 require 'bitcoin'
 require 'net/http'
 require 'json'
-Bitcoin.chain_params = :testnet
+Bitcoin.chain_params = :signet
 RPCUSER="hoge"
 RPCPASSWORD="hoge"
 HOST="localhost"
