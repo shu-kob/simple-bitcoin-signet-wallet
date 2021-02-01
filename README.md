@@ -39,7 +39,7 @@ $ sudo cp * /usr/local/bin
 ```
 $ bitcoind -signet -txindex -daemon
 ```
-regtestはスタンドアロンのテストモード<br>
+signetはPoAのテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
 daemonはデーモン起動でコンソール上にログを吐きません。<br>
 
