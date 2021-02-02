@@ -88,6 +88,15 @@ $ cd ~/.bitcoin
 
 bitcoin.confを記載
 
+```
+$ nano bitcoin.conf
+```
+
+もしくは
+```
+$ nano bitcoin.conf
+```
+
 下記を記述して保存
 
 ```
