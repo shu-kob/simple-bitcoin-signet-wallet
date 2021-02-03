@@ -39,9 +39,9 @@ $ sudo cp * /usr/local/bin
 ```
 $ bitcoind -signet -txindex -daemon
 ```
-signetはPoAのテストネット<br>
+signetはPoA型のテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
-daemonはデーモン起動でコンソール上にログを吐きません。<br>
+daemonはデーモン起動。<br>
 
 ログは下記に出力されます。
 
@@ -124,7 +124,7 @@ $ bitcoind
 $ bitcoin-cli getblockchaininfo
 ```
 
-bitcoindを起動したままにして、Ruby on Railsの環境を整えていきます。
+bitcoindを起動したままにして、Ruby on Railsの環境を整えていきます
 
 ## Ruby on Railsのインストール
 
