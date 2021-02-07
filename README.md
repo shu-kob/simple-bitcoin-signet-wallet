@@ -229,3 +229,11 @@ vagrantの場合
 http://192.168.33.10:3000/
 
 ブロック一覧画面が出ればOKです
+
+## 外部のSignetツール
+
+ブロックチェーンエクスプローラ
+https://explorer.bc-2.jp/
+
+Signet Faucet
+https://signet.bc-2.jp/
