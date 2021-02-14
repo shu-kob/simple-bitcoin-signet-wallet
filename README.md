@@ -1,6 +1,6 @@
 # Simple Bitcoin Signet Wallet
 
-本アプリのソースコードと、bitcoind起動オプションの変更で、Mainnet、Testnet、Regtestでお使いいただくことも可能です。
+本アプリのソースコードと、bitcoind起動オプションの変更で、Signet以外にもMainnet、Testnet、Regtestでお使いいただくことも可能です。
 
 ## Bitcoin Core
 Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントです。
