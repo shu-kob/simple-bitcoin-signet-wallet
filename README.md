@@ -100,7 +100,7 @@ $ nano bitcoin.conf
 
 もしくは
 ```
-$ nano bitcoin.conf
+$  bitcoin.conf
 ```
 
 下記を記述して保存
