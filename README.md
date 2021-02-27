@@ -45,6 +45,8 @@ $ sudo cp * /usr/local/bin
 ```
 $ bitcoind -signet -txindex -daemon
 ```
+
+オプションの内容：
 signetはPoA型のテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
 daemonはデーモン起動。<br>
