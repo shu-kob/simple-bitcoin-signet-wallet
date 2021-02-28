@@ -46,10 +46,10 @@ $ sudo cp * /usr/local/bin
 $ bitcoind -signet -txindex -daemon
 ```
 
-オプションの内容：
+オプションの内容は以下の通りです
 signetはPoA型のテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
-daemonはデーモン起動。<br>
+daemonはデーモン起動<br>
 
 signetの同期は時間がさほどかかりませんが、Testnet, Mainnetは同期が終わるのに長時間必要です。
 
