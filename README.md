@@ -68,6 +68,15 @@ Ubuntuの場合
 
 ※ネットワークごとにディレクトリが変わります。
 
+上からMainnet,Testnet,Regtestです。
+Macの場合は適宜置き換えてください。
+
+```
+~/.bitcoin/debug.log
+~/.bitcoin/testnet3/debug.log
+~/.bitcoin/regtest/debug.log
+```
+
 ブロックチェーンの同期状況を見てみます。
 
 ```
