@@ -11,7 +11,7 @@ https://github.com/bitcoin/bitcoin
 
 ### Bitcoin Core(bitcoind)のインストール
 
-bitcoindのVer.は適宜変更してください。
+bitcoindのversionは適宜変更してください。
 
 SignetをサポートしているVer.はv0.21.0以降です。
 
