@@ -47,7 +47,7 @@ $ bitcoind -signet -txindex -daemon
 ```
 
 オプションの内容は以下の通りです
-signetはPoA型のテストネット<br>
+signetはPoA（Proof of Authority）型のテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
 daemonはデーモン起動<br>
 
