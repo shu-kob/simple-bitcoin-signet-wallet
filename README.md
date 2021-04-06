@@ -47,11 +47,11 @@ $ bitcoind -signet -txindex -daemon
 ```
 
 オプションの内容は以下の通りです
-signetはPoA（Proof of Authority）型のテストネット<br>
+signetはPoA(Proof of Authority)型のテストネット<br>
 txindexはブロックチェーン上のトランザクションを全取得<br>
 daemonはデーモン起動<br>
 
-signetの同期は時間がさほどかかりませんが、Testnet, Mainnetは同期が終わるのに長時間必要です。
+Signetの同期は時間がさほどかかりませんが、Testnet, Mainnetは同期が終わるのに長時間必要です。
 
 ログは下記に出力されます。
 
