@@ -115,7 +115,7 @@ $ nano bitcoin.conf
 
 もしくは
 ```
-$  bitcoin.conf
+$ vi bitcoin.conf
 ```
 
 下記を記述して保存
