@@ -38,6 +38,7 @@ $ tar -zxvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
 $ cd bitcoin-0.21.0/bin/
 $ sudo cp * /usr/local/bin
 ```
+
 ### bitcoindの起動
 
 起動
@@ -237,6 +238,7 @@ http://192.168.33.10:3000/
 ```
 git clone https://github.com/shu-kob/simple-bitcoin-signet-wallet
 ```
+
 ### ブラウザにてアプリ画面が立ち上がっていることを確認
 
 ローカルの場合
