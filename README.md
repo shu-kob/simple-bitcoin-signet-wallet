@@ -62,7 +62,6 @@ Macの場合
 ```
 
 Ubuntuの場合
-
 ```
 ~/.bitcoin/signet/debug.log
 ```
