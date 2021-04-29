@@ -7,6 +7,8 @@ Bitcoin Coreはbitcoindとも呼ばれるBitcoinの公式クライアントで�
 
 bitcoindを本アプリケーションと併用して使用します。
 
+bitcoinのGitHubリポジトリーはこちら
+
 https://github.com/bitcoin/bitcoin
 
 ### Bitcoin Core(bitcoind)のインストール
