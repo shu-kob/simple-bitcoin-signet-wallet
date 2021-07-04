@@ -23,9 +23,9 @@ SignetをサポートしているVer.はv0.21.0以降です。
 
 ```
 $ cd
-$ wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-osx64.tar.gz
-$ tar -zxvf bitcoin-0.21.0-osx64.tar.gz
-$ cd bitcoin-0.21.0/bin/
+$ wget https://bitcoin.org/bin/bitcoin-core-0.21.1/bitcoin-0.21.1-osx64.tar.gz
+$ tar -zxvf bitcoin-0.21.1-osx64.tar.gz
+$ cd bitcoin-0.21.1/bin/
 $ sudo cp * /usr/local/bin
 ```
 
@@ -35,9 +35,9 @@ $ sudo cp * /usr/local/bin
 
 ```
 $ cd
-$ wget https://bitcoin.org/bin/bitcoin-core-0.21.0/bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
-$ tar -zxvf bitcoin-0.21.0-x86_64-linux-gnu.tar.gz
-$ cd bitcoin-0.21.0/bin/
+$ wget https://bitcoin.org/bin/bitcoin-core-0.21.1/bitcoin-0.21.1-x86_64-linux-gnu.tar.gz
+$ tar -zxvf bitcoin-0.21.1-x86_64-linux-gnu.tar.gz
+$ cd bitcoin-0.21.1/bin/
 $ sudo cp * /usr/local/bin
 ```
 
